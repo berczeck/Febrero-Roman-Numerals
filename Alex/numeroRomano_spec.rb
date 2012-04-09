@@ -32,4 +32,12 @@ describe NumeroRomano do
 			@nroRomano.convierte(3).should == "III"
 		end
 	end
+	context "Disminuir un valor " do
+		it "el valor 4 debe convertirse en IV" do
+			@nroRomano.disminuye(4).should == "IV"
+		end
+		it "el valor 9 debe convertirse en IX" do
+			@nroRomano.disminuye(9).should == "IX"
+		end
+	end
 end

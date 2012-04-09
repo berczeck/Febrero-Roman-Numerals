@@ -20,4 +20,15 @@ class NumeroRomano
 
     	return result
 	end
+
+	def disminuye(numero)
+		result = ""
+		case numero
+			when 4
+				result = "IV"
+			when 9
+				result = "IX"
+		end	
+    	return result
+	end
 end
