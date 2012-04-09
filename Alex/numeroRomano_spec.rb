@@ -11,5 +11,17 @@ describe NumeroRomano do
 			nroRomano = NumeroRomano.new()
 			nroRomano.convierte(5).should == "V"
 		end
+		it "el valor 10 en X" do
+			nroRomano = NumeroRomano.new()
+			nroRomano.convierte(10).should == "X"
+		end
+		it "el valor 100 en L" do
+			nroRomano = NumeroRomano.new()
+			nroRomano.convierte(100).should == "L"
+		end
+		it "el valor 1000 en C" do
+			nroRomano = NumeroRomano.new()
+			nroRomano.convierte(1000).should == "C"
+		end
 	end
 end
