@@ -1,21 +1,17 @@
 class NumeroRomano
+
+	SIMBOLOS = [["C",100],["L",50],["X",10],["V",5],["I",1]]
+
 	def convierte(numero)
-
-		case numero
-			when 1
-				result = "I"
-			when 5
-				result = "V"
-			when 10
-				result = "X"
-			when 100
-				result = "L"
-			else
-				result = "C"			
+		result = ""
+		if numero >= 5
+			SIMBOLOS.each do | romano, valor |
+				if numero ==  valor
+					result = romano
+				end
+			end
 		end
-
 		if numero >= 1 && numero < 5
-			result = ""
 			while numero >= 1 
 				result += "I"
 				numero -= 1  
@@ -23,6 +19,5 @@ class NumeroRomano
 		end 
 
     	return result
-    	
 	end
 end

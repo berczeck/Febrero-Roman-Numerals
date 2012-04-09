@@ -16,11 +16,11 @@ describe NumeroRomano do
 		it "el valor 10 en X" do
 			@nroRomano.convierte(10).should == "X"
 		end
-		it "el valor 100 en L" do
-			@nroRomano.convierte(100).should == "L"
+		it "el valor 50 en L" do
+			@nroRomano.convierte(50).should == "L"
 		end
-		it "el valor 1000 en C" do
-			@nroRomano.convierte(1000).should == "C"
+		it "el valor 100 en C" do
+			@nroRomano.convierte(100).should == "C"
 		end
 	end
 
