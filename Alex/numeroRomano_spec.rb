@@ -2,37 +2,34 @@ require './numeroRomano.rb'
 
 describe NumeroRomano do
 
+	before(:each)do
+		@nroRomano = NumeroRomano.new()
+	end
+
 	context "Convierte" do
 		it "el valor 1 en I" do
-			nroRomano = NumeroRomano.new()
-			nroRomano.convierte(1).should == "I"
+			@nroRomano.convierte(1).should == "I"
 		end
 		it "el valor 5 en V" do
-			nroRomano = NumeroRomano.new()
-			nroRomano.convierte(5).should == "V"
+			@nroRomano.convierte(5).should == "V"
 		end
 		it "el valor 10 en X" do
-			nroRomano = NumeroRomano.new()
-			nroRomano.convierte(10).should == "X"
+			@nroRomano.convierte(10).should == "X"
 		end
 		it "el valor 100 en L" do
-			nroRomano = NumeroRomano.new()
-			nroRomano.convierte(100).should == "L"
+			@nroRomano.convierte(100).should == "L"
 		end
 		it "el valor 1000 en C" do
-			nroRomano = NumeroRomano.new()
-			nroRomano.convierte(1000).should == "C"
+			@nroRomano.convierte(1000).should == "C"
 		end
 	end
 
 	context "Adicionar un valor " do
 		it "el valor 2 debe convertirse en II" do
-			nroRomano = NumeroRomano.new()
-			nroRomano.convierte(2).should == "II"
+			@nroRomano.convierte(2).should == "II"
 		end
 		it "el valor 3 debe convertirse en III" do
-			nroRomano = NumeroRomano.new()
-			nroRomano.convierte(3).should == "III"
+			@nroRomano.convierte(3).should == "III"
 		end
 	end
 end
