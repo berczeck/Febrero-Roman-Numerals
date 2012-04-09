@@ -24,4 +24,11 @@ describe NumeroRomano do
 			nroRomano.convierte(1000).should == "C"
 		end
 	end
+
+	context "Adicinoar un valor " do
+		it "el valor 2 debe convertirse en II" do
+			nroRomano = NumeroRomano.new()
+			nroRomano.convierte(2).should == "II"
+		end
+	end
 end

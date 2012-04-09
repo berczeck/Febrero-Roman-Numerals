@@ -12,7 +12,15 @@ class NumeroRomano
 			else
 				result = "C"			
 		end
-		
-		return result
+
+		if numero >= 1 && numero < 5
+			result = ""
+			while numero >= 1 
+				result += "I"
+				numero -= 1  
+			end
+		end 
+
+    	return result
 	end
 end
