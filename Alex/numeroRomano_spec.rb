@@ -25,10 +25,14 @@ describe NumeroRomano do
 		end
 	end
 
-	context "Adicinoar un valor " do
+	context "Adicionar un valor " do
 		it "el valor 2 debe convertirse en II" do
 			nroRomano = NumeroRomano.new()
 			nroRomano.convierte(2).should == "II"
+		end
+		it "el valor 3 debe convertirse en III" do
+			nroRomano = NumeroRomano.new()
+			nroRomano.convierte(3).should == "III"
 		end
 	end
 end
